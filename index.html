@@ -28,7 +28,7 @@
 </header>
 
 <section>
-  <h2>Warum AI Agenten Solutions?</h2>
+  <h2>Warum AI Agents Solutions?</h2>
   <div class="features">
     <div class="card"><h3>Autonome Entscheidungen</h3><p>Agenten treffen kontextbasierte Entscheidungen mit minimalem menschlichen Aufwand.</p></div>
     <div class="card"><h3>Workflow-Automation</h3><p>Mehrstufige Aufgaben werden vollständig automatisiert – effizient und zuverlässig.</p></div>
@@ -44,28 +44,69 @@
     <div class="card"><h3>Kundenservice-Agent</h3><p>Automatische Beantwortung, Ticketing, Priorisierung und Weiterleitung – 24/7.</p></div>
     <div class="card"><h3>Vertriebs-Agent</h3><p>Lead-Generierung, Outreach, Follow-ups und Terminvereinbarungen.</p></div>
     <div class="card"><h3>Forecasting-Agent</h3><p>Datenanalyse, Prognosemodelle und KPI-Überwachung in Echtzeit.</p></div>
-  </div>
-</section>
-
-<section>
-  <h2>Pakete & Preise</h2>
-  <div class="pricing">
-    <div class="card"><h3>Starter</h3><p>1 Agent · Basis-Setup · 499 € / Monat</p></div>
-    <div class="card"><h3>Business</h3><p>3 Agenten · Integration · 1.290 € / Monat</p></div>
-    <div class="card"><h3>Enterprise</h3><p>Unbegrenzt · volle Automatisierung · ab 3.500 € / Monat</p></div>
+    <div class="card"><h3>Datenanalyse-Agent</h3><p>Automatische Auswertung großer Datenmengen, KPI-Monitoring und Visualisierungen.</p></div>
+    <div class="card"><h3>Data Engineer Agent</h3><p>Datenpipelines, Automatisierung, Cloud-Integration in AWS, Azure, Google Cloud.</p></div>
+    <div class="card"><h3>ESG-Agent</h3><p>ESG-Daten sammeln, strukturieren und automatisierte ESG-Berichte erstellen.</p></div>
+    <div class="card"><h3>Nachhaltigkeitsbericht-Agent</h3><p>Automatisierte Nachhaltigkeitsberichterstattung (CSRD, ESRS, GRI).</p></div>
+    <div class="card"><h3>Buchhaltungs-Agent</h3><p>Belegerkennung, Kontierung, Monatsabschlüsse, Finanzautomatisierung.</p></div>
+    <div class="card"><h3>Finanz-Agent</h3><p>Cashflow-Analysen, Liquiditätsplanung und Automatisierte Finanzreports.</p></div>
+    <div class="card"><h3>Banken-Agent</h3><p>Risikoprüfung, Fraud Detection, Kredit-Scoring, Prozessautomatisierung.</p></div>
+    <div class="card"><h3>Controlling-Agent</h3><p>Kostenanalysen, Budgetierung, Soll-Ist-Vergleiche und Echtzeit-Dashboards.</p></div>
+    <div class="card"><h3>CrewAI Team-Agenten</h3><p>Mehrere Agenten arbeiten koordiniert, kommunizieren miteinander und lösen komplexe Aufgaben.</p></div>
   </div>
 </section>
 
 <div class="contact">
   <h2>Kontakt & Anfrage</h2>
-  <p>Wir setzen Ihren Agent ganz nach Ihren Anforderungen um.</p>
-  <form>
+  <p>AI Agents Solutions – Erreichbar unter: <strong>0049 176/31591931</strong></p>
+  <form id="contact-form">
     <input type="text" placeholder="Ihr Name" required />
     <input type="email" placeholder="Ihre E-Mail" required />
     <textarea placeholder="Ihr Anliegen" rows="4"></textarea>
     <button type="submit">Anfrage senden</button>
   </form>
 </div>
+
+<section>
+  <h2>Impressum</h2>
+  <p><strong>AI Agents Solutions</strong><br>
+  Verantwortlich: Sidi Ould<br>
+  Telefon: 0049 176/31591931<br>
+  E-Mail: info@sidi-ai.com<br>
+  Hinweis: Inhalte dienen Informationszwecken. Keine Haftung für externe Links.</p>
+</section>
+
+<section>
+  <h2>Datenschutz</h2>
+  <p>Wir nehmen Datenschutz sehr ernst. Personenbezogene Daten werden gemäß DSGVO verarbeitet. Es erfolgt keine Weitergabe an Dritte ohne ausdrückliche Zustimmung. Für Hosting und Agenten bieten wir sichere Lösungen in SaaS, AWS, Azure und Google Cloud.</p>
+</section>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = {
+      name: form.querySelector('input[placeholder="Ihr Name"]').value,
+      email: form.querySelector('input[placeholder="Ihre E-Mail"]').value,
+      message: form.querySelector('textarea').value
+    };
+    try {
+      const res = await fetch('https://YOUR-N8N-DOMAIN/webhook/CONTACT_FORM', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        alert('Danke! Ihre Anfrage wurde erfolgreich gesendet.');
+        form.reset();
+      } else {
+        alert('Fehler beim Senden der Anfrage.');
+      }
+    } catch (err) {
+      alert('Netzwerkfehler. Bitte erneut versuchen.');
+    }
+  });
+</script>
 
 <footer>
   © 2025 AI Agents Solutions — Automatisierung für moderne Unternehmen
