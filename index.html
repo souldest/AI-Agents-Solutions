@@ -5,20 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Agents Solutions – Intelligente Unternehmensautomatisierung</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0d0d0d; color: #f2f2f2; }
-    header { padding: 60px 40px; text-align: center; background: linear-gradient(180deg,#0e0e0e,#1c1c1c); }
+    body { font-family: Arial, sans-serif; margin: 0; background: #0d0d0d; color: #f2f2f2; scroll-behavior: smooth; }
+    header { padding: 60px 40px; text-align: center; background: linear-gradient(180deg,#0e0e0e,#1c1c1c); position: sticky; top: 0; z-index: 100; }
     header h1 { font-size: 48px; margin-bottom: 10px; }
     header p { font-size: 20px; max-width: 600px; margin: 0 auto; color: #ccc; }
     section { padding: 60px 40px; max-width: 1100px; margin: auto; }
     h2 { font-size: 32px; margin-bottom: 20px; }
     .features, .usecases, .pricing { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; }
-    .card { background: #1a1a1a; padding: 25px; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.05); }
+    .card { background: #1a1a1a; padding: 25px; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.05); transition: all 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(74, 74, 255, 0.5); }
     .contact { background: #111; padding: 60px 40px; text-align: center; }
     .contact form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
     input, textarea { padding: 12px; border-radius: 8px; border: none; font-size: 16px; }
-    button { padding: 14px; background: #4a4aff; border: none; color: white; font-size: 18px; border-radius: 8px; cursor: pointer; }
+    button { padding: 14px; background: #4a4aff; border: none; color: white; font-size: 18px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
+    button:hover { background: #6a6aff; transform: scale(1.05); }
     footer { text-align: center; padding: 20px; color: #777; background: #0e0e0e; }
+    .agent-icon { font-size: 40px; margin-bottom: 10px; color: #4a4aff; }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -30,29 +34,29 @@
 <section>
   <h2>Warum AI Agents Solutions?</h2>
   <div class="features">
-    <div class="card"><h3>Autonome Entscheidungen</h3><p>Agenten treffen kontextbasierte Entscheidungen mit minimalem menschlichen Aufwand.</p></div>
-    <div class="card"><h3>Workflow-Automation</h3><p>Mehrstufige Aufgaben werden vollständig automatisiert – effizient und zuverlässig.</p></div>
-    <div class="card"><h3>Predictive & Analytical Intelligence</h3><p>Erstellen Sie genaue Vorhersagen, Prognosen und Trendanalysen.</p></div>
-    <div class="card"><h3>Multi-System Integration</h3><p>Die Agenten arbeiten autonom mit APIs, Datenbanken und Tools.</p></div>
-    <div class="card"><h3>Adaptives Lernen</h3><p>Verbesserung durch kontinuierliches Feedback & Optimierung.</p></div>
+    <div class="card"><i class="fas fa-robot agent-icon"></i><h3>Autonome Entscheidungen</h3><p>Agenten treffen kontextbasierte Entscheidungen mit minimalem menschlichen Aufwand.</p></div>
+    <div class="card"><i class="fas fa-cogs agent-icon"></i><h3>Workflow-Automation</h3><p>Mehrstufige Aufgaben werden vollständig automatisiert – effizient und zuverlässig.</p></div>
+    <div class="card"><i class="fas fa-chart-line agent-icon"></i><h3>Predictive & Analytical Intelligence</h3><p>Erstellen Sie genaue Vorhersagen, Prognosen und Trendanalysen.</p></div>
+    <div class="card"><i class="fas fa-database agent-icon"></i><h3>Multi-System Integration</h3><p>Die Agenten arbeiten autonom mit APIs, Datenbanken und Tools.</p></div>
+    <div class="card"><i class="fas fa-brain agent-icon"></i><h3>Adaptives Lernen</h3><p>Verbesserung durch kontinuierliches Feedback & Optimierung.</p></div>
   </div>
 </section>
 
 <section>
   <h2>Einsatzbereiche</h2>
   <div class="usecases">
-    <div class="card"><h3>Kundenservice-Agent</h3><p>Automatische Beantwortung, Ticketing, Priorisierung und Weiterleitung – 24/7.</p></div>
-    <div class="card"><h3>Vertriebs-Agent</h3><p>Lead-Generierung, Outreach, Follow-ups und Terminvereinbarungen.</p></div>
-    <div class="card"><h3>Forecasting-Agent</h3><p>Datenanalyse, Prognosemodelle und KPI-Überwachung in Echtzeit.</p></div>
-    <div class="card"><h3>Datenanalyse-Agent</h3><p>Automatische Auswertung großer Datenmengen, KPI-Monitoring und Visualisierungen.</p></div>
-    <div class="card"><h3>Data Engineer Agent</h3><p>Datenpipelines, Automatisierung, Cloud-Integration in AWS, Azure, Google Cloud.</p></div>
-    <div class="card"><h3>ESG-Agent</h3><p>ESG-Daten sammeln, strukturieren und automatisierte ESG-Berichte erstellen.</p></div>
-    <div class="card"><h3>Nachhaltigkeitsbericht-Agent</h3><p>Automatisierte Nachhaltigkeitsberichterstattung (CSRD, ESRS, GRI).</p></div>
-    <div class="card"><h3>Buchhaltungs-Agent</h3><p>Belegerkennung, Kontierung, Monatsabschlüsse, Finanzautomatisierung.</p></div>
-    <div class="card"><h3>Finanz-Agent</h3><p>Cashflow-Analysen, Liquiditätsplanung und Automatisierte Finanzreports.</p></div>
-    <div class="card"><h3>Banken-Agent</h3><p>Risikoprüfung, Fraud Detection, Kredit-Scoring, Prozessautomatisierung.</p></div>
-    <div class="card"><h3>Controlling-Agent</h3><p>Kostenanalysen, Budgetierung, Soll-Ist-Vergleiche und Echtzeit-Dashboards.</p></div>
-    <div class="card"><h3>CrewAI Team-Agenten</h3><p>Mehrere Agenten arbeiten koordiniert, kommunizieren miteinander und lösen komplexe Aufgaben.</p></div>
+    <div class="card"><i class="fas fa-headset agent-icon"></i><h3>Kundenservice-Agent</h3><p>Automatische Beantwortung, Ticketing, Priorisierung und Weiterleitung – 24/7.</p></div>
+    <div class="card"><i class="fas fa-handshake agent-icon"></i><h3>Vertriebs-Agent</h3><p>Lead-Generierung, Outreach, Follow-ups und Terminvereinbarungen.</p></div>
+    <div class="card"><i class="fas fa-chart-pie agent-icon"></i><h3>Forecasting-Agent</h3><p>Datenanalyse, Prognosemodelle und KPI-Überwachung in Echtzeit.</p></div>
+    <div class="card"><i class="fas fa-chart-bar agent-icon"></i><h3>Datenanalyse-Agent</h3><p>Automatische Auswertung großer Datenmengen, KPI-Monitoring und Visualisierungen.</p></div>
+    <div class="card"><i class="fas fa-server agent-icon"></i><h3>Data Engineer Agent</h3><p>Datenpipelines, Automatisierung, Cloud-Integration in AWS, Azure, Google Cloud.</p></div>
+    <div class="card"><i class="fas fa-leaf agent-icon"></i><h3>ESG-Agent</h3><p>ESG-Daten sammeln, strukturieren und automatisierte ESG-Berichte erstellen.</p></div>
+    <div class="card"><i class="fas fa-file-alt agent-icon"></i><h3>Nachhaltigkeitsbericht-Agent</h3><p>Automatisierte Nachhaltigkeitsberichterstattung (CSRD, ESRS, GRI).</p></div>
+    <div class="card"><i class="fas fa-receipt agent-icon"></i><h3>Buchhaltungs-Agent</h3><p>Belegerkennung, Kontierung, Monatsabschlüsse, Finanzautomatisierung.</p></div>
+    <div class="card"><i class="fas fa-dollar-sign agent-icon"></i><h3>Finanz-Agent</h3><p>Cashflow-Analysen, Liquiditätsplanung und Automatisierte Finanzreports.</p></div>
+    <div class="card"><i class="fas fa-university agent-icon"></i><h3>Banken-Agent</h3><p>Risikoprüfung, Fraud Detection, Kredit-Scoring, Prozessautomatisierung.</p></div>
+    <div class="card"><i class="fas fa-calculator agent-icon"></i><h3>Controlling-Agent</h3><p>Kostenanalysen, Budgetierung, Soll-Ist-Vergleiche und Echtzeit-Dashboards.</p></div>
+    <div class="card"><i class="fas fa-users agent-icon"></i><h3>CrewAI Team-Agenten</h3><p>Mehrere Agenten arbeiten koordiniert, kommunizieren miteinander und lösen komplexe Aufgaben.</p></div>
   </div>
   <p><strong>Für Hosting und Agenten bieten wir sichere Lösungen in SaaS, AWS, Azure und Google Cloud.</strong></p>
 </section>
