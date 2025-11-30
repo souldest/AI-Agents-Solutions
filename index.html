@@ -9,6 +9,17 @@
     header { padding: 60px 40px; text-align: center; background: linear-gradient(180deg,#0e0e0e,#1c1c1c); position: sticky; top: 0; z-index: 100; }
     header h1 { font-size: 48px; margin-bottom: 10px; }
     header p { font-size: 20px; max-width: 600px; margin: 0 auto; color: #ccc; }
+
+    /* Hero-Banner */
+    #hero { position: relative; text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); color: #fff; }
+    #hero h2, #hero p, #hero button { opacity: 0; }
+    #hero h2 { font-size: 36px; animation: fadeIn 2s forwards; }
+    #hero p { font-size: 20px; margin: 20px 0; animation: fadeIn 2.5s forwards; }
+    #hero button { padding: 14px 28px; font-size: 18px; border: none; border-radius: 8px; background: #4a4aff; color: white; cursor: pointer; animation: fadeIn 3s forwards; }
+    #hero button:hover { background: #6a6aff; transform: scale(1.05); transition: all 0.3s ease; }
+
+    @keyframes fadeIn { to { opacity: 1; } }
+
     section { padding: 60px 40px; max-width: 1100px; margin: auto; }
     h2 { font-size: 32px; margin-bottom: 20px; }
     .features, .usecases, .pricing { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; }
@@ -30,6 +41,13 @@
   <h1>AI Agents Solutions</h1>
   <p>Autonome KI-Agenten für Vertrieb, Kundenservice, Forecasting und Prozessautomatisierung – bereit für Ihr Unternehmen.</p>
 </header>
+
+<!-- Hero-Banner -->
+<section id="hero">
+  <h2>Autonome AI-Agenten für Ihr Unternehmen</h2>
+  <p>Optimieren Sie Prozesse, steigern Sie Effizienz und automatisieren Sie Workflows mit unseren intelligenten Agenten.</p>
+  <button>Jetzt Agenten entdecken</button>
+</section>
 
 <section>
   <h2>Warum AI Agents Solutions?</h2>
@@ -119,3 +137,4 @@
 
 </body>
 </html>
+
