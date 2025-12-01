@@ -3,138 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Agents Solutions – Intelligente Unternehmensautomatisierung</title>
+  <title>AI Agents Solutions</title>
+  <meta name="description" content="AI Agents Solutions – Autonome KI-Agenten für Unternehmen. Datenanalyse, ESG, Finanzen, Buchhaltung, Controlling, Support und mehr." />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0d0d0d; color: #f2f2f2; scroll-behavior: smooth; }
-    header { padding: 60px 40px; text-align: center; background: linear-gradient(180deg,#0e0e0e,#1c1c1c); position: sticky; top: 0; z-index: 100; }
-    header h1 { font-size: 48px; margin-bottom: 10px; }
-    header p { font-size: 20px; max-width: 600px; margin: 0 auto; color: #ccc; }
-
-    /* Hero-Banner */
-    #hero { position: relative; text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); color: #fff; }
-    #hero h2, #hero p, #hero button { opacity: 0; }
-    #hero h2 { font-size: 36px; animation: fadeIn 2s forwards; }
-    #hero p { font-size: 20px; margin: 20px 0; animation: fadeIn 2.5s forwards; }
-    #hero button { padding: 14px 28px; font-size: 18px; border: none; border-radius: 8px; background: #4a4aff; color: white; cursor: pointer; animation: fadeIn 3s forwards; }
-    #hero button:hover { background: #6a6aff; transform: scale(1.05); transition: all 0.3s ease; }
-
-    @keyframes fadeIn { to { opacity: 1; } }
-
-    section { padding: 60px 40px; max-width: 1100px; margin: auto; }
-    h2 { font-size: 32px; margin-bottom: 20px; }
-    .features, .usecases, .pricing { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 30px; }
-    .card { background: #1a1a1a; padding: 25px; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.05); transition: all 0.3s ease; }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(74, 74, 255, 0.5); }
-    .contact { background: #111; padding: 60px 40px; text-align: center; }
-    .contact form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
-    input, textarea { padding: 12px; border-radius: 8px; border: none; font-size: 16px; }
-    button { padding: 14px; background: #4a4aff; border: none; color: white; font-size: 18px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; }
-    button:hover { background: #6a6aff; transform: scale(1.05); }
-    footer { text-align: center; padding: 20px; color: #777; background: #0e0e0e; }
-    .agent-icon { font-size: 40px; margin-bottom: 10px; color: #4a4aff; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f8; color: #222; }
+    header { position: sticky; top: 0; background: #111; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; color: white; z-index: 10; }
+    nav a { color: white; margin-left: 15px; text-decoration: none; font-weight: bold; }
+    #hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg,#0e0e0e,#222); color:white; }
+    #hero h1 { font-size: 48px; animation: fadeIn 2s forwards; opacity: 0; }
+    #hero p { font-size: 22px; animation: fadeIn 2.5s forwards; opacity: 0; }
+    #hero button { padding: 16px 32px; font-size: 20px; background: #4a4aff; border: none; border-radius: 10px; cursor: pointer; animation: fadeIn 3s forwards; opacity: 0; color:white; }
+    .section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 20px; }
+    .card { background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.2); }
+    form input, form textarea { width:100%; padding:12px; margin-bottom:12px; border-radius:8px; border:1px solid #ccc; }
+    button.primary { background:#4a4aff; color:white; border:none; padding:14px 26px; border-radius:8px; font-size:18px; cursor:pointer; }
+    @keyframes fadeIn { to { opacity:1; } }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
 <header>
-  <h1>AI Agents Solutions</h1>
-  <p>Autonome KI-Agenten für Vertrieb, Kundenservice, Forecasting und Prozessautomatisierung – bereit für Ihr Unternehmen.</p>
+  <div><strong>AI Agents Solutions</strong></div>
+  <nav>
+    <a href="#agenten">Agenten</a>
+    <a href="#technologien">Technologien</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
 </header>
 
-<!-- Hero-Banner -->
 <section id="hero">
-  <h2>Autonome AI-Agenten für Ihr Unternehmen</h2>
-  <p>Optimieren Sie Prozesse, steigern Sie Effizienz und automatisieren Sie Workflows mit unseren intelligenten Agenten.</p>
-  <button>Jetzt Agenten entdecken</button>
+  <h1>Autonome KI-Agenten für jedes Unternehmen</h1>
+  <p>Wir automatisieren Prozesse, analysieren Daten und optimieren Entscheidungen – voll autonom.</p>
+  <button onclick="document.getElementById('kontakt').scrollIntoView()">Jetzt Kontakt aufnehmen</button>
 </section>
 
-<section>
-  <h2>Warum AI Agents Solutions?</h2>
-  <div class="features">
-    <div class="card"><i class="fas fa-robot agent-icon"></i><h3>Autonome Entscheidungen</h3><p>Agenten treffen kontextbasierte Entscheidungen mit minimalem menschlichen Aufwand.</p></div>
-    <div class="card"><i class="fas fa-cogs agent-icon"></i><h3>Workflow-Automation</h3><p>Mehrstufige Aufgaben werden vollständig automatisiert – effizient und zuverlässig.</p></div>
-    <div class="card"><i class="fas fa-chart-line agent-icon"></i><h3>Predictive & Analytical Intelligence</h3><p>Erstellen Sie genaue Vorhersagen, Prognosen und Trendanalysen.</p></div>
-    <div class="card"><i class="fas fa-database agent-icon"></i><h3>Multi-System Integration</h3><p>Die Agenten arbeiten autonom mit APIs, Datenbanken und Tools.</p></div>
-    <div class="card"><i class="fas fa-brain agent-icon"></i><h3>Adaptives Lernen</h3><p>Verbesserung durch kontinuierliches Feedback & Optimierung.</p></div>
+<section id="agenten" class="section">
+  <h2>Unsere KI-Agenten</h2>
+  <div class="grid">
+    <div class="card"><h3>Datenanalyse-Agent</h3><p>Automatisiert Analysen, Reports, Dashboards.</p></div>
+    <div class="card"><h3>Data Engineer Agent</h3><p>Datenpipelines, ETL, Qualitätssicherung.</p></div>
+    <div class="card"><h3>ESG-Agent</h3><p>Nachhaltigkeitsdaten erfassen & bewerten.</p></div>
+    <div class="card"><h3>Nachhaltigkeitsbericht-Agent</h3><p>Erstellt ESG- & CSRD-konforme Berichte.</p></div>
+    <div class="card"><h3>Buchhaltungs-Agent</h3><p>Automatische Buchungen, Rechnungserkennung.</p></div>
+    <div class="card"><h3>Finanz-Agent</h3><p>Forecasting, Risikoanalyse, Simulationen.</p></div>
+    <div class="card"><h3>Banken-Agent</h3><p>Kreditprüfung, Scoring, AML-Monitoring.</p></div>
+    <div class="card"><h3>Controlling-Agent</h3><p>KPI-Analysen, Budgetierung, Abweichungen.</p></div>
+    <div class="card"><h3>Support-Agent</h3><p>Kundenservice & Backoffice vollständig autonom.</p></div>
+    <div class="card"><h3>Marketing-Agent</h3><p>Werbung, Social Media & Kampagnen-Autopilot.</p></div>
+    <div class="card"><h3>Sales-Agent</h3><p>Leads finden, ansprechen & qualifizieren.</p></div>
+    <div class="card"><h3>CrewAI Multi-Agent Teams</h3><p>Teams aus Agenten, die kommunizieren & zusammenarbeiten.</p></div>
   </div>
 </section>
 
-<section>
-  <h2>Einsatzbereiche</h2>
-  <div class="usecases">
-    <div class="card"><i class="fas fa-headset agent-icon"></i><h3>Kundenservice-Agent</h3><p>Automatische Beantwortung, Ticketing, Priorisierung und Weiterleitung – 24/7.</p></div>
-    <div class="card"><i class="fas fa-handshake agent-icon"></i><h3>Vertriebs-Agent</h3><p>Lead-Generierung, Outreach, Follow-ups und Terminvereinbarungen.</p></div>
-    <div class="card"><i class="fas fa-chart-pie agent-icon"></i><h3>Forecasting-Agent</h3><p>Datenanalyse, Prognosemodelle und KPI-Überwachung in Echtzeit.</p></div>
-    <div class="card"><i class="fas fa-chart-bar agent-icon"></i><h3>Datenanalyse-Agent</h3><p>Automatische Auswertung großer Datenmengen, KPI-Monitoring und Visualisierungen.</p></div>
-    <div class="card"><i class="fas fa-server agent-icon"></i><h3>Data Engineer Agent</h3><p>Datenpipelines, Automatisierung, Cloud-Integration in AWS, Azure, Google Cloud.</p></div>
-    <div class="card"><i class="fas fa-leaf agent-icon"></i><h3>ESG-Agent</h3><p>ESG-Daten sammeln, strukturieren und automatisierte ESG-Berichte erstellen.</p></div>
-    <div class="card"><i class="fas fa-file-alt agent-icon"></i><h3>Nachhaltigkeitsbericht-Agent</h3><p>Automatisierte Nachhaltigkeitsberichterstattung (CSRD, ESRS, GRI).</p></div>
-    <div class="card"><i class="fas fa-receipt agent-icon"></i><h3>Buchhaltungs-Agent</h3><p>Belegerkennung, Kontierung, Monatsabschlüsse, Finanzautomatisierung.</p></div>
-    <div class="card"><i class="fas fa-dollar-sign agent-icon"></i><h3>Finanz-Agent</h3><p>Cashflow-Analysen, Liquiditätsplanung und Automatisierte Finanzreports.</p></div>
-    <div class="card"><i class="fas fa-university agent-icon"></i><h3>Banken-Agent</h3><p>Risikoprüfung, Fraud Detection, Kredit-Scoring, Prozessautomatisierung.</p></div>
-    <div class="card"><i class="fas fa-calculator agent-icon"></i><h3>Controlling-Agent</h3><p>Kostenanalysen, Budgetierung, Soll-Ist-Vergleiche und Echtzeit-Dashboards.</p></div>
-    <div class="card"><i class="fas fa-users agent-icon"></i><h3>CrewAI Team-Agenten</h3><p>Mehrere Agenten arbeiten koordiniert, kommunizieren miteinander und lösen komplexe Aufgaben.</p></div>
+<section class="section">
+  <h2>Technologien & Tools</h2>
+  <div class="grid">
+    <div class="card"><h3>Programmiersprachen</h3><p>Python, FastAPI, Node.js, React, TypeScript.</p></div>
+    <div class="card"><h3>No-Code / Low-Code</h3><p>ChatGPT, n8n, Make, AutoGen, Dify, MindStudio.</p></div>
+    <div class="card"><h3>LLM-Plattformen</h3><p>OpenAI, Azure OpenAI, Anthropic, Cohere, Hugging Face, Google Vertex AI.</p></div>
+    <div class="card"><h3>Datenbanken</h3><p>PostgreSQL, MySQL, MariaDB, MongoDB, Oracle, Snowflake sowie AWS/Azure/GCP-DBs.</p></div>
+    <div class="card"><h3>Cloud</h3><p>AWS, Azure, Google Cloud, SaaS-Deployments.</p></div>
   </div>
-  <p><strong>Für Hosting und Agenten bieten wir sichere Lösungen in SaaS, AWS, Azure und Google Cloud.</strong></p>
 </section>
 
-<div class="contact">
-  <h2>Kontakt & Anfrage</h2>
-  <p>AI Agents Solutions – Erreichbar unter: <strong>0049 176/31591931</strong></p>
-  <form id="contact-form">
-    <input type="text" placeholder="Ihr Name" required />
-    <input type="email" placeholder="Ihre E-Mail" required />
-    <textarea placeholder="Ihr Anliegen" rows="4"></textarea>
-    <button type="submit">Anfrage senden</button>
+<section id="kontakt" class="section">
+  <h2>Kontakt</h2>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Ihr Name" required />
+    <input type="email" name="email" placeholder="Ihre E-Mail" required />
+    <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
+    <button type="submit" class="primary">Senden</button>
   </form>
-</div>
-
-<section>
-  <h2>Impressum</h2>
-  <p><strong>AI Agents Solutions</strong><br>
-  Verantwortlich: Dr. Sigfried Weiss<br>
-  Telefon: 0049 176/31591931<br>
-  E-Mail: vertrieb@ai-agents-solutions.com<br>
-  Hinweis: Inhalte dienen Informationszwecken. Keine Haftung für externe Links.</p>
-</section>
-
-<section>
-  <h2>Datenschutz</h2>
-  <p>Wir nehmen Datenschutz sehr ernst. Personenbezogene Daten werden gemäß DSGVO verarbeitet. Es erfolgt keine Weitergabe an Dritte ohne ausdrückliche Zustimmung.</p>
+  <p id="formStatus"></p>
 </section>
 
 <script>
-  document.getElementById('contact-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const form = e.target;
-    const data = {
-      name: form.querySelector('input[placeholder="Ihr Name"]').value,
-      email: form.querySelector('input[placeholder="Ihre E-Mail"]').value,
-      message: form.querySelector('textarea').value
-    };
-    try {
-      const res = await fetch('https://YOUR-N8N-DOMAIN/webhook/CONTACT_FORM', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      if (res.ok) {
-        alert('Danke! Ihre Anfrage wurde erfolgreich gesendet.');
-        form.reset();
-      } else {
-        alert('Fehler beim Senden der Anfrage.');
-      }
-    } catch (err) {
-      alert('Netzwerkfehler. Bitte erneut versuchen.');
-    }
-  });
+const webhookUrl = "https://YOUR-N8N-DOMAIN/webhook/CONTACT";
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target));
+  const res = await fetch(webhookUrl, { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data) });
+  document.getElementById("formStatus").textContent = res.ok ? "Nachricht erfolgreich gesendet." : "Fehler beim Senden.";
+  if(res.ok) e.target.reset();
+});
 </script>
 
-<footer>
-  © 2025 AI Agents Solutions — Automatisierung für moderne Unternehmen
-</footer>
+<section class="section">
+  <h2>Impressum</h2>
+  <p>AI Agents Solutions<br> Verantwortlich: Dr. Sigfried Weiss<br> Telefon: 0049 176/31591931<br> E-Mail: vertrieb@ai-agents-solutions.com</p>
+</section>
+
+<section class="section">
+  <h2>Datenschutz</h2>
+  <p>Wir verarbeiten personenbezogene Daten ausschließlich gemäß DSGVO und verwenden Ihre Daten nur zur Bearbeitung Ihrer Anfrage.</p>
+</section>
 
 </body>
 </html>
-
